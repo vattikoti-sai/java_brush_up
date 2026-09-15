@@ -8,8 +8,9 @@ public class Game {
 		Random d = new Random();
 		int s=d.nextInt(1,10);
 
-int chances=2;
 int i=3;
+int chances=i-1;
+
 while(i>0) {
 	System.out.println("enter your number : ");
 	int n=sc.nextInt();
@@ -18,7 +19,9 @@ while(i>0) {
 		break;
 	}else {
 		
-		System.out.println("better luck next time "+chances+"more chances left");
+		if(chances==0) {
+			System.out.println("better luck next time ");
+		}
 	}
 	i--;
 	chances--;
