@@ -18,7 +18,7 @@ while(i>0) {
 		System.out.println(" you won ");
 		break;
 	}else {
-		
+		System.out.println("u have "+chances+" chances left ");
 		if(chances==0) {
 			System.out.println("better luck next time ");
 		}
